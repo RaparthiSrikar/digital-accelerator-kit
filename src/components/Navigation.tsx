@@ -22,8 +22,8 @@ const Navigation = () => {
       <div className="container mx-auto px-4">
         <div className="flex items-center justify-between h-16">
           <Link to="/" className="flex items-center space-x-2">
-            <div className="text-2xl font-bold bg-gradient-to-r from-primary to-primary-hover bg-clip-text text-transparent">
-              DigitalSolutions
+            <div className="text-2xl font-bold text-foreground">
+              <span className="text-primary">SHIFT</span>WAVE
             </div>
           </Link>
 
@@ -40,8 +40,8 @@ const Navigation = () => {
                 {item.name}
               </Link>
             ))}
-            <Button asChild>
-              <Link to="/contact">Get Started</Link>
+            <Button asChild className="rounded-full">
+              <Link to="/contact">Book a Call</Link>
             </Button>
           </div>
 

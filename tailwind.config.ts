@@ -49,6 +49,9 @@ export default {
           foreground: "hsl(var(--card-foreground))",
         },
         'section-bg': "hsl(var(--section-bg))",
+        'stat-card': "hsl(var(--stat-card))",
+        'stat-card-foreground': "hsl(var(--stat-card-foreground))",
+        'overlay-dark': "hsl(var(--overlay-dark))",
       },
       borderRadius: {
         lg: "var(--radius)",
