@@ -146,7 +146,7 @@ const Chatbot = () => {
           {/* Header */}
           <div className="bg-primary text-primary-foreground p-4 rounded-t-lg flex justify-between items-center">
             <div>
-              <h3 className="font-semibold">Shiftwave Assistant</h3>
+              <h3 className="font-semibold">Digital IT Assistant</h3>
               <p className="text-xs opacity-90">Ask us anything</p>
             </div>
             <Button
