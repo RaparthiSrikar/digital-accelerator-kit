@@ -34,7 +34,7 @@ const Navigation = () => {
           </Link>
 
           {/* Desktop Navigation */}
-          <div className="hidden md:flex items-center space-x-4">
+          <div className="hidden md:flex items-center justify-center flex-1 space-x-4">
             {navItems.map((item) => (
               <Link
                 key={item.path}
@@ -46,6 +46,9 @@ const Navigation = () => {
                 {item.name}
               </Link>
             ))}
+          </div>
+          
+          <div className="hidden md:flex items-center space-x-4">
             <ThemeToggle />
             <Button asChild className="rounded-full">
               <Link to="/contact">Book a Call</Link>
