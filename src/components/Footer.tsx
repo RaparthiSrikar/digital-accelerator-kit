@@ -12,7 +12,7 @@ const Footer = () => {
               <img src={title} alt="Logo" className="h-10 w-40 inline-block mr-2" />
             </h3>
             <p className="text-sm opacity-80">
-              Empowering your Digital Growth with 5+ years of experience.
+              Empowering your Digital Growth with Expertise.
             </p>
           </div>
 
@@ -58,7 +58,7 @@ const Footer = () => {
         </div>
 
         <div className="border-t border-background/20 mt-8 pt-8 text-center text-sm opacity-80">
-          <p>&copy; 2024 Digital IT & Media Solutions. All rights reserved.</p>
+          <p>&copy; 2025 Digital IT & Media Solutions. All rights reserved.</p>
         </div>
       </div>
     </footer>
