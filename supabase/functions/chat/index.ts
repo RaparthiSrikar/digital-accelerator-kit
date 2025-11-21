@@ -30,7 +30,7 @@ serve(async (req) => {
         messages: [
           { 
             role: "system", 
-            content: "You are a helpful AI assistant for Shiftwave, a digital IT & media solutions agency with 18+ years of experience. Help visitors with information about our services (website design, e-commerce, SEO, social media marketing, PPC, branding), our expertise, and answer general questions. Be professional, friendly, and helpful." 
+            content: "You are a helpful AI assistant for Digital IT & Media Solutions, a digital IT & media solutions agency with 10+ years of experience. Help visitors with information about our services (website design, e-commerce, SEO, social media marketing, PPC, branding), our expertise, and answer general questions. Be professional, friendly, and helpful." 
           },
           ...messages,
         ],
