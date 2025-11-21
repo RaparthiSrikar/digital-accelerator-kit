@@ -25,7 +25,7 @@ const HeroSection = () => {
               Empowering your Digital Growth with Expertise
             </h1>
             <p className="text-lg md:text-xl mb-8 text-white/90 animate-fade-in">
-              Shiftwave blends smart marketing with powerful web development to help your brand grow by tailored solutions.
+              Digital IT & Media Solutions blends smart marketing with powerful web development to help your brand grow by tailored solutions.
             </p>
             <Button asChild size="lg" className="animate-scale-in">
               <Link to="/contact">
@@ -38,11 +38,11 @@ const HeroSection = () => {
           {/* Right Stats Cards */}
           <div className="flex flex-col gap-4 animate-slide-up" style={{ animationDelay: "200ms" }}>
             <div className="bg-stat-card text-stat-card-foreground p-6 rounded-2xl min-w-[200px] shadow-lg">
-              <div className="text-4xl font-bold mb-1">4,000+</div>
+              <div className="text-4xl font-bold mb-1">1,000+</div>
               <div className="text-sm font-medium">Website Projects</div>
             </div>
             <div className="bg-stat-card text-stat-card-foreground p-6 rounded-2xl min-w-[200px] shadow-lg">
-              <div className="text-4xl font-bold mb-1">18+</div>
+              <div className="text-4xl font-bold mb-1">10+</div>
               <div className="text-sm font-medium">Years of Experience</div>
             </div>
             <div className="bg-stat-card text-stat-card-foreground p-6 rounded-2xl min-w-[200px] shadow-lg">

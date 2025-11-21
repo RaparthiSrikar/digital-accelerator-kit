@@ -1,5 +1,6 @@
 import { Link } from "react-router-dom";
 import { Mail, Phone, MapPin } from "lucide-react";
+import title from "../assets/title.png";
 
 const Footer = () => {
   return (
@@ -8,10 +9,10 @@ const Footer = () => {
         <div className="grid grid-cols-1 md:grid-cols-4 gap-8">
           <div>
             <h3 className="text-xl font-bold mb-4">
-              <span className="text-primary">SHIFT</span>WAVE
+              <img src={title} alt="Logo" className="h-10 w-40 inline-block mr-2" />
             </h3>
             <p className="text-sm opacity-80">
-              Empowering your Digital Growth with 18+ years of experience.
+              Empowering your Digital Growth with 5+ years of experience.
             </p>
           </div>
 
@@ -46,18 +47,18 @@ const Footer = () => {
               </li>
               <li className="flex items-center gap-2">
                 <Mail size={16} />
-                <span>info@digitalsolutions.com</span>
+                <span>hr@digital-itsolutions.com</span>
               </li>
               <li className="flex items-center gap-2">
                 <MapPin size={16} />
-                <span>123 Business St, NY 10001</span>
+                <span>1st Floor, IT Tower, Nalgonda, Telangana, 508001</span>
               </li>
             </ul>
           </div>
         </div>
 
         <div className="border-t border-background/20 mt-8 pt-8 text-center text-sm opacity-80">
-          <p>&copy; 2024 Shiftwave. All rights reserved.</p>
+          <p>&copy; 2024 Digital IT & Media Solutions. All rights reserved.</p>
         </div>
       </div>
     </footer>
