@@ -2,7 +2,6 @@ import Navigation from "@/components/Navigation";
 import Footer from "@/components/Footer";
 import HeroSection from "@/components/HeroSection";
 import ServicesGrid from "@/components/ServicesGrid";
-import WhatsAppButton from "@/components/WhatsAppButton";
 
 const Home = () => {
   return (
@@ -36,7 +35,6 @@ const Home = () => {
       </section>
 
       <Footer />
-      <WhatsAppButton />
     </div>
   );
 };
