@@ -69,36 +69,39 @@ const ServicesGrid = () => {
 
         {/* Services Grid */}
         <div className="grid md:grid-cols-2 lg:grid-cols-3 gap-6">
-          {services.map((service, index) => (
-            <Card
-              key={index}
-              className="p-8 hover:shadow-xl transition-all duration-300 group cursor-pointer relative overflow-hidden"
-            >
-              {/* Number Badge */}
-              <div className="absolute top-6 right-6 text-6xl font-bold text-muted/10 group-hover:text-primary/10 transition-colors">
-                {service.number}
-              </div>
-              
-              <div className="relative">
-                <div className="w-14 h-14 rounded-xl bg-primary/10 flex items-center justify-center mb-6 group-hover:bg-primary group-hover:text-primary-foreground transition-colors">
-                  <service.icon className="w-7 h-7 text-primary group-hover:text-primary-foreground transition-colors" />
+          {services.map((service, index) => {
+            const IconComponent = service.icon;
+            return (
+              <Card
+                key={index}
+                className="p-8 hover:shadow-xl transition-all duration-300 group cursor-pointer relative overflow-hidden"
+              >
+                {/* Number Badge */}
+                <div className="absolute top-6 right-6 text-6xl font-bold text-muted/10 group-hover:text-primary/10 transition-colors">
+                  {service.number}
                 </div>
                 
-                <h3 className="text-xl font-bold mb-3 group-hover:text-primary transition-colors">
-                  {service.title}
-                </h3>
-                
-                <p className="text-muted-foreground mb-6">
-                  {service.description}
-                </p>
+                <div className="relative">
+                  <div className="w-14 h-14 rounded-xl bg-primary/10 flex items-center justify-center mb-6 group-hover:bg-primary group-hover:text-primary-foreground transition-colors">
+                    <IconComponent className="w-7 h-7 text-primary group-hover:text-primary-foreground transition-colors" />
+                  </div>
+                  
+                  <h3 className="text-xl font-bold mb-3 group-hover:text-primary transition-colors">
+                    {service.title}
+                  </h3>
+                  
+                  <p className="text-muted-foreground mb-6">
+                    {service.description}
+                  </p>
 
-                <div className="flex items-center gap-2 text-primary font-medium text-sm group-hover:gap-3 transition-all">
-                  Learn More
-                  <ArrowRight size={16} className="group-hover:translate-x-1 transition-transform" />
+                  <div className="flex items-center gap-2 text-primary font-medium text-sm group-hover:gap-3 transition-all">
+                    Learn More
+                    <ArrowRight size={16} className="group-hover:translate-x-1 transition-transform" />
+                  </div>
                 </div>
-              </div>
-            </Card>
-          ))}
+              </Card>
+            );
+          })}
         </div>
       </div>
     </section>
