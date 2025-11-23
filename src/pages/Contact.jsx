@@ -14,7 +14,7 @@ const Contact = () => {
   const { toast } = useToast();
   const [isSubmitting, setIsSubmitting] = useState(false);
 
-  const handleSubmit = async (e: React.FormEvent<HTMLFormElement>) => {
+  const handleSubmit = async (e) => {
     e.preventDefault();
     setIsSubmitting(true);
 
@@ -25,7 +25,7 @@ const Contact = () => {
         description: "We'll get back to you within 24 hours.",
       });
       setIsSubmitting(false);
-      (e.target as HTMLFormElement).reset();
+      e.target.reset();
     }, 1000);
   };
 
@@ -101,73 +101,35 @@ const Contact = () => {
             </Card>
 
             {/* Contact Information */}
-            <div className="space-y-6">
-              <Card className="p-6">
-                <h3 className="text-xl font-semibold mb-6">Contact Information</h3>
-                <div className="space-y-6">
-                  <div className="flex items-start gap-4">
-                    <div className="w-12 h-12 rounded-lg bg-primary/10 flex items-center justify-center flex-shrink-0">
-                      <Phone className="w-6 h-6 text-primary" />
-                    </div>
-                    <div>
-                      <p className="font-medium mb-1">Phone</p>
-                      <p className="text-muted-foreground">+1 (555) 123-4567</p>
-                      <p className="text-muted-foreground">+1 (555) 987-6543</p>
-                    </div>
-                  </div>
-
-                  <div className="flex items-start gap-4">
-                    <div className="w-12 h-12 rounded-lg bg-primary/10 flex items-center justify-center flex-shrink-0">
-                      <Mail className="w-6 h-6 text-primary" />
-                    </div>
-                    <div>
-                      <p className="font-medium mb-1">Email</p>
-                      <p className="text-muted-foreground">info@digitalsolutions.com</p>
-                      <p className="text-muted-foreground">sales@digitalsolutions.com</p>
-                    </div>
-                  </div>
-
-                  <div className="flex items-start gap-4">
-                    <div className="w-12 h-12 rounded-lg bg-primary/10 flex items-center justify-center flex-shrink-0">
-                      <MapPin className="w-6 h-6 text-primary" />
-                    </div>
-                    <div>
-                      <p className="font-medium mb-1">Office</p>
-                      <p className="text-muted-foreground">123 Business Street</p>
-                      <p className="text-muted-foreground">New York, NY 10001</p>
-                    </div>
-                  </div>
+            <div className="lg:col-span-1 space-y-6">
+              <Card className="p-6 space-y-4">
+                <div className="flex items-center space-x-4">
+                  <MapPin className="h-5 w-5 text-muted-foreground" />
+                  <h3 className="text-lg font-semibold">Visit Us</h3>
                 </div>
+                <p className="text-sm text-muted-foreground">
+                  123 Digital Lane, Tech City, USA
+                </p>
               </Card>
 
-              <Card className="p-6 bg-gradient-to-br from-primary/10 to-primary/5">
-                <h3 className="text-xl font-semibold mb-3">Working Hours</h3>
-                <div className="space-y-2 text-sm">
-                  <div className="flex justify-between">
-                    <span className="text-muted-foreground">Monday - Friday</span>
-                    <span className="font-medium">9:00 AM - 6:00 PM</span>
-                  </div>
-                  <div className="flex justify-between">
-                    <span className="text-muted-foreground">Saturday</span>
-                    <span className="font-medium">10:00 AM - 4:00 PM</span>
-                  </div>
-                  <div className="flex justify-between">
-                    <span className="text-muted-foreground">Sunday</span>
-                    <span className="font-medium">Closed</span>
-                  </div>
+              <Card className="p-6 space-y-4">
+                <div className="flex items-center space-x-4">
+                  <Mail className="h-5 w-5 text-muted-foreground" />
+                  <h3 className="text-lg font-semibold">Email Us</h3>
                 </div>
+                <p className="text-sm text-muted-foreground">
+                  info@digitalsolutions.com
+                </p>
               </Card>
 
-              <Card className="p-6">
-                <h3 className="text-xl font-semibold mb-4">Quick Actions</h3>
-                <div className="space-y-3">
-                  <Button className="w-full" variant="outline">
-                    Schedule a Call
-                  </Button>
-                  <Button className="w-full" variant="outline">
-                    Download Portfolio
-                  </Button>
+              <Card className="p-6 space-y-4">
+                <div className="flex items-center space-x-4">
+                  <Phone className="h-5 w-5 text-muted-foreground" />
+                  <h3 className="text-lg font-semibold">Call Us</h3>
                 </div>
+                <p className="text-sm text-muted-foreground">
+                  +1 (555) 123-4567
+                </p>
               </Card>
             </div>
           </div>
